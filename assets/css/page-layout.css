@@ -1,0 +1,41 @@
+.example {
+	border: 1px solid var(--functional-color-1);
+	background-color: var(--functional-color-4);
+	padding: 10px;
+}
+.container-alert {
+	padding-bottom: 20px !important;
+}
+
+.row-text-color {
+	color: var(--feedback-color-3);
+}
+
+.contents {
+	padding-top: 20px;
+}
+
+:root {
+	--embed-responsive-aspect-ratios: ((21 9), (16 9), (4 3), (1 1));
+}
+
+.coreconcepts {
+	font-size: 1.2rem !important;
+}
+
+.card-example {
+	padding: 0;
+	padding-bottom: 20px;
+}
+
+.embed-responsive {
+	margin-bottom: 20px;
+}
+
+.table.table-breakpoint tbody tr td {
+	font-size: 14px; /* You can adjust the font size as needed */
+}
+
+.table.table-breakpoint ul li {
+	font-size: 14px;
+}

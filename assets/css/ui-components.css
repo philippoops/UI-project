@@ -1,0 +1,259 @@
+/* body of the content start */
+/* heading set up start */
+h5,
+h6 {
+	font-family: var(--secondary-font-family);
+	text-transform: none !important;
+}
+/* heading set up start */
+
+/* sample content set up start */
+.table-thead {
+	background: var(--primary-color);
+}
+.alert-message {
+	background-color: var(--functional-color-2);
+	padding: 10px 10px 10px 40px;
+	border-radius: 5px;
+}
+.alert-message-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fa-cloud {
+	font-size: 2rem;
+	margin-right: 2rem;
+	color: var(--primary-color);
+}
+.fa-circle-exclamation {
+	margin-right: 0.6rem;
+	font-size: 1.3rem;
+}
+pre {
+	overflow-x: auto;
+	word-wrap: break-word;
+	padding: 15px 12px;
+	background-color: var(--feedback-color-5);
+	border-radius: 5px;
+	width: auto;
+	tab-size: 0;
+	margin-bottom: 0 !important;
+}
+.btn-copy {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	z-index: 10;
+	display: block;
+	padding: 4px;
+	cursor: pointer;
+	background-color: var(--feedback-color-4);
+	border: 1;
+}
+.heading-message {
+	display: flex;
+}
+.btn-close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 10;
+	display: block;
+	padding: 5px;
+	cursor: pointer;
+}
+.btn-close:hover {
+	color: var(--functional-color-4);
+}
+/* sample content set up end */
+
+/* button content css start */
+
+/* color of buttons start */
+.btn-primarySample1 {
+	background: var(--primary-color) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+}
+.btn-primarySample2 {
+	background: var(--accent-color-3) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+}
+.btn-primarySample3 {
+	background: var(--accent-color-1) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+}
+.btn-primarySample4 {
+	background: var(--accent-color-4) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+}
+.btn-primarySample5 {
+	background: var(--accent-color-8) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+}
+.btn-primarySample6 {
+	background: var(--accent-color-7) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+}
+.btn-primarySample7 {
+	background: var(--functional-color-2) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+}
+.btn-primarySample8 {
+	background: var(--functional-color-1) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+}
+/* color of buttons end */
+
+/* outline button start */
+.btn-outline-primary-sample1 {
+	border-color: var(--primary-color);
+	color: var(--primary-color);
+}
+.btn-outline-primary-sample1:hover {
+	background: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.btn-outline-primary-sample2 {
+	border-color: var(--accent-color-3);
+	color: var(--accent-color-3);
+}
+.btn-outline-primary-sample2:hover {
+	background: var(--accent-color-3);
+	border-color: var(--accent-color-3);
+}
+
+.btn-outline-primary-sample3 {
+	border-color: var(--accent-color-1);
+	color: var(--accent-color-1);
+}
+.btn-outline-primary-sample3:hover {
+	background: var(--accent-color-1);
+	border-color: var(--accent-color-1);
+}
+
+.btn-outline-primary-sample4 {
+	border-color: var(--accent-color-4);
+	color: var(--accent-color-4);
+}
+.btn-outline-primary-sample4:hover {
+	background: var(--accent-color-4);
+	border-color: var(--accent-color-4);
+}
+
+.btn-outline-primary-sample5 {
+	border-color: var(--accent-color-8);
+	color: var(--accent-color-8);
+}
+.btn-outline-primary-sample5:hover {
+	background: var(--accent-color-8);
+	border-color: var(--accent-color-8);
+}
+.btn-outline-primary-sample6 {
+	border-color: var(--accent-color-7);
+	color: var(--accent-color-7);
+}
+.btn-outline-primary-sample6:hover {
+	background: var(--accent-color-7);
+	border-color: var(--accent-color-7);
+}
+
+.btn-outline-primary-sample7 {
+	border-color: var(--functional-color-2);
+	color: var(--functional-color-2);
+}
+.btn-outline-primary-sample7:hover {
+	background: var(--functional-color-2);
+	border-color: var(--functional-color-2);
+}
+/* outline button end */
+
+.size-button-heading {
+	margin-top: 0 !important;
+	font-size: 1.3rem !important;
+}
+
+/* size button start */
+.btn-lg-sample1 {
+	background: var(--primary-color) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+}
+.btn-lg-sample2 {
+	background: var(--accent-color-3) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+}
+/* button content css end */
+
+/* card content start */
+.card-style {
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+	padding: 0 !important;
+}
+.card-title {
+	margin-top: 0 !important;
+}
+.btn-card {
+	background: var(--primary-color) !important;
+	border: 0;
+	box-shadow: var(--shadow-style-1);
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+/* card content end */
+
+/* navbar content start */
+.navbar-expand-lg {
+	margin-bottom: 2rem;
+}
+.navbar a {
+	text-decoration: none !important;
+}
+/* navbar content end */
+
+/* spinner content start */
+.spinner-border {
+	width: 4rem;
+	height: 4rem;
+	margin-bottom: 40px;
+}
+.spinner-grow {
+	width: 4rem;
+	height: 4rem;
+	margin-bottom: 40px;
+}
+
+/* spinner color start */
+.text-primary-sample1 {
+	color: var(--primary-color) !important;
+}
+.text-primary-sample2 {
+	color: var(--accent-color-3) !important;
+}
+.text-primary-sample3 {
+	color: var(--accent-color-1) !important;
+}
+.text-primary-sample4 {
+	color: var(--accent-color-4) !important;
+}
+.text-primary-sample5 {
+	color: var(--accent-color-8) !important;
+}
+.text-primary-sample6 {
+	color: var(--accent-color-7) !important;
+}
+/* spinner content end */
+
+/* body of the content end */

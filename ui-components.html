@@ -1,0 +1,2416 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="./assets/css/default.css" />
+		<link rel="stylesheet" href="./assets/css/navbar.css" />
+		<link rel="stylesheet" href="./assets/css/interior.css" />
+		<link rel="stylesheet" href="./assets/css/left-nav.css" />
+		<link rel="stylesheet" href="./assets/css/entry-content.css" />
+		<link rel="stylesheet" href="./assets/css/ui-components.css" />
+		<title>
+			Project 1 User Interface - INFO-3171-(01)-2023 Fall - Brand Guides
+		</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="container-fluid">
+				<nav
+					class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+					id="header"
+				>
+					<div class="container">
+						<a class="navbar-brand" href="#">
+							<img
+								src="./assets/images/logo.png"
+								class="d-inline-block align-top logo transition"
+								alt="Logo"
+							/>
+						</a>
+						<button
+							class="navbar-toggler hb-menu"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarNav"
+							aria-controls="navbarNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html"
+										>Home</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="./brand-guides.html"
+										>Brand Guides</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="./data-visualization.html"
+										>Data Visualization</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="./page-layouts.html"
+										>Page Layouts</a
+									>
+								</li>
+								<li class="nav-item active">
+									<a
+										class="nav-link"
+										href="./ui-components.html"
+										>UI Components</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main id="main-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+						<ul id="mini-tab">
+							<li>
+								<a
+									href="#alerts"
+									class="mt-el"
+									data-tab="alerts"
+									data-show-first="true"
+									>Alerts</a
+								>
+							</li>
+							<li>
+								<a
+									href="#breadcrumb"
+									class="mt-el"
+									data-tab="breadcrumb"
+									>Breadcrumb</a
+								>
+							</li>
+							<li>
+								<a
+									href="#buttons"
+									class="mt-el"
+									data-tab="buttons"
+									>Buttons</a
+								>
+							</li>
+							<li>
+								<a href="#cards" class="mt-el" data-tab="cards"
+									>Cards</a
+								>
+							</li>
+							<li>
+								<a href="#" class="mt-el" data-tab="navbars"
+									>Navbar</a
+								>
+							</li>
+							<li>
+								<a href="#" class="mt-el" data-tab="spinners"
+									>Spinners</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+						<div id="content-holder">
+							<!-- PRELOADER START -->
+							<div class="" id="preloader">
+								<div class="text-center mt-5">
+									<div
+										class="spinner-border text-primary"
+										role="status"
+									>
+										<span class="sr-only">Loading...</span>
+									</div>
+								</div>
+							</div>
+							<!-- PRELOADER END -->
+
+							<!-- ALERT START -->
+							<div
+								class="entry-content"
+								id="alerts"
+								data-show-first="true"
+							>
+								<!-- ALERT INTRO START -->
+								<div class="row p-3">
+									<div class="col-md-6">
+										<h1>Alerts</h1>
+										<p>
+											Provide contextual feedback messages
+											for typical user actions with the
+											handful of available and flexible
+											alert messages.
+										</p>
+										<p>
+											Alerts comes with two examples,
+											<a href="#alerts-with-colors"
+												>alerts with colors</a
+											>
+											and
+											<a href="#alerts-with-contents"
+												>alerts with contents</a
+											>.
+										</p>
+									</div>
+
+									<div class="col-md-6">
+										<div class="border-1 my-3 bg-light">
+											<table class="table">
+												<thead
+													class="table-success table-thead"
+												>
+													<tr>
+														<th scope="col">
+															Type
+														</th>
+														<th scope="col">
+															Description
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">
+															<a
+																href="#alerts-with-colors"
+																>alerts with
+																colors</a
+															>
+														</th>
+														<td>
+															Use to quickly match
+															the color within any
+															alert.
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">
+															<a
+																href="#alerts-with-contents"
+																>alerts with
+																contents</a
+															>
+														</th>
+														<td>
+															Alerts can also
+															contain additional
+															HTML elements like
+															headings, paragraphs
+															and dividers.
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- ALERT INTRO END -->
+
+								<!-- ALERT SAMPLE 1 START -->
+								<div class="row p-3" id="alerts-with-colors">
+									<h6>Alert with Colors</h6>
+									<p class="text mb-3">
+										An alert with color is a visual
+										component in a pattern library setup
+										website that serves as a dynamic
+										notification system. Use the proper
+										styling class
+										<code>alert alert-primary</code>.
+									</p>
+									<div class="card border-1 mt-3">
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														It uses different colors
+														to draw attention to
+														important information,
+														such as warnings,
+														errors, or
+														notifications. This
+														feature enhances user
+														experience by providing
+														clear and eye-catching
+														cues within the
+														website's design.
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="alert">
+											<div
+												class="alert alert-primary"
+												role="alert"
+											>
+												<i
+													class="fa-solid fa-circle-exclamation"
+												></i>
+												A simple primary alert with a
+												good looking color and
+												exclamation warning.
+											</div>
+
+											<div
+												class="alert alert-secondary"
+												role="alert"
+											>
+												<i
+													class="fa-solid fa-circle-exclamation"
+												></i>
+												A simple secondary alert with a
+												good looking color and
+												exclamation warning.
+											</div>
+
+											<div
+												class="alert alert-success"
+												role="alert"
+											>
+												<i
+													class="fa-solid fa-circle-exclamation"
+												></i>
+												A simple success alert with a
+												good looking color and
+												exclamation warning.
+											</div>
+
+											<div
+												class="alert alert-danger"
+												role="alert"
+											>
+												<i
+													class="fa-solid fa-circle-exclamation"
+												></i>
+												A simple danger alert with a
+												good looking color and
+												exclamation warning.
+											</div>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+												<code>
+	&lt;div class="alert alert-primary"role="alert"&gt;
+		&nbsp;&nbsp;&lt;i class="fa-solid fa-circle-exclamation">&lt;/i>
+		&nbsp;&nbsp;A simple primary alert with a very good color and an exclamation warning.
+	&lt;/div&gt;
+	&lt;div class="alert alert-secondary"role="alert"&gt;
+		&nbsp;&nbsp;&lt;i class="fa-solid fa-circle-exclamation">&lt;/i>
+		&nbsp;&nbsp;A simple secondary alert with a very good color and an exclamation warning.
+	&lt;/div&gt;
+	&lt;div class="alert alert-success"role="alert"&gt;
+		&nbsp;&nbsp;&lt;i class="fa-solid fa-circle-exclamation">&lt;/i>
+		&nbsp;&nbsp;A simple success alert with a very good color and an exclamation warning.
+	&lt;/div&gt;
+	&lt;div class="alert alert-danger"role="alert"&gt;
+		&nbsp;&nbsp;&lt;i class="fa-solid fa-circle-exclamation">&lt;/i>
+		&nbsp;&nbsp;A simple danger alert with a very good color and an exclamation warning.
+	&lt;/div&gt;
+												</code>
+											</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- ALERT SAMPLE 1 END -->
+
+								<!-- ALERT SAMPLE 2 START -->
+								<div class="row p-3" id="alerts-with-contents">
+									<h6>Alert with Contents</h6>
+									<p class="text mb-3">
+										An 'Alert with Contents' is a user
+										interface component within a pattern
+										library setup website that is designed
+										to display important information or
+										notifications. Use the proper styling
+										class
+										<code>alert-heading</code>.
+									</p>
+									<div class="card border-1 mt-3">
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														It typically consists of
+														text and possibly other
+														elements, such as icons
+														or buttons, and is used
+														to communicate messages,
+														warnings, or updates to
+														the website's users,
+														enhancing their overall
+														experience and
+														interaction with the
+														site's design.
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="alert">
+											<div
+												class="alert alert-success"
+												role="alert"
+											>
+												<i
+													class="fa-solid fa-xmark btn-close"
+												></i>
+
+												<h4 class="alert-heading">
+													<i
+														class="fa-solid fa-triangle-exclamation alert-success"
+													></i>
+													Alert Message
+												</h4>
+
+												<p>
+													This is an informational
+													alert. It provides users
+													with important information
+													about the website or a
+													specific feature.
+												</p>
+												<hr />
+												<p class="mb-0">
+													Whenever you need to, be
+													sure to use margin utilities
+													to keep things nice and
+													tidy.
+												</p>
+											</div>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+												<code>
+	&lt;div class="alert alert-success" role="alert"&gt;
+	&nbsp;&nbsp;&lt;i class="fa-solid fa-xmark btn-close">&lt;/i>
+	&lt;h4 class="alert-heading">
+	&nbsp;&nbsp;&lt;i class="fa-solid fa-triangle-exclamation alert-success">&lt;/i>
+	&nbsp;&nbsp;Alert Message
+	&lt;/h4>
+	&lt;p>
+	&nbsp;&nbsp;This is an informational alert. It provides users with important information about the website or a specific feature.
+	&lt;/p>
+	&lt;hr />
+	&lt;p class="mb-0">
+	&nbsp;&nbsp;Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+	&lt;/p>
+	&lt;/div
+												</code>
+											</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- ALERT SAMPLE 2 END -->
+							</div>
+							<!-- ALERT END -->
+
+							<!-- BREADCRUMB START -->
+							<div class="entry-content" id="breadcrumb">
+								<div class="row p-3">
+									<!-- breadcrumb heading start -->
+									<h1>Breadcrumb</h1>
+									<p>
+										A Breadcrumb in a pattern library setup
+										website is a navigational element
+										typically displayed near the top of a
+										webpage. It provides a visual trail of
+										links that represent the user's path
+										through the website's hierarchy.
+									</p>
+								</div>
+								<!-- breadcrumb heading end -->
+
+								<!-- breadcrumb content start -->
+								<div class="row p-3">
+									<div class="card border-1 mt-3">
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														Breadcrumbs help users
+														understand their current
+														location within the
+														site, making it easier
+														to navigate back to
+														previous pages or
+														explore related content.
+														This user interface
+														component enhances the
+														website's usability by
+														offering a clear and
+														structured way to move
+														around the site.
+													</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="alert">
+											<!-- code -->
+											<nav aria-label="breadcrumb">
+												<ol class="breadcrumb">
+													<li
+														class="breadcrumb-item active"
+														aria-current="page"
+													>
+														Home
+													</li>
+												</ol>
+											</nav>
+
+											<nav aria-label="breadcrumb">
+												<ol class="breadcrumb">
+													<li class="breadcrumb-item">
+														<a href="#">Home</a>
+													</li>
+													<li
+														class="breadcrumb-item active"
+														aria-current="page"
+													>
+														Library
+													</li>
+												</ol>
+											</nav>
+
+											<nav aria-label="breadcrumb">
+												<ol class="breadcrumb">
+													<li class="breadcrumb-item">
+														<a href="#">Home</a>
+													</li>
+													<li class="breadcrumb-item">
+														<a href="#">Library</a>
+													</li>
+													<li
+														class="breadcrumb-item active"
+														aria-current="page"
+													>
+														Data
+													</li>
+												</ol>
+											</nav>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+												<code>
+		&lt;nav aria-label="breadcrumb"&gt;
+		&nbsp;&nbsp;&nbsp;&lt;ol class="breadcrumb">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb-item active" aria-current="page">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li>
+		&nbsp;&nbsp;&nbsp;&lt;/ol>
+		&lt;/nav>
+		
+		&lt;nav aria-label="breadcrumb">
+		&nbsp;&nbsp;&nbsp;&lt;ol class="breadcrumb">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb-item">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">Home&lt;/a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb-item active" aria-current="page">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Library
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li>
+		&nbsp;&nbsp;&nbsp;&lt;/ol>
+		&lt;/nav>
+		
+		&lt;nav aria-label="breadcrumb">
+		&nbsp;&nbsp;&nbsp;&lt;ol class="breadcrumb">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb-item">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">Home&lt;/a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb-item">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">Library&lt;/a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb-item active" aria-current="page">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li>
+		&nbsp;&nbsp;&nbsp;&lt;/ol>
+		&lt;/nav>
+	
+												</code>
+											</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- breadcrumb content end -->
+							</div>
+							<!-- BREADCRUMB END -->
+
+							<!-- BUTTONS START -->
+							<div
+								class="entry-content"
+								id="buttons"
+								data-show-first="true"
+							>
+								<!-- BUTTONS INTRO START -->
+								<div class="row p-3">
+									<div class="col-md-6">
+										<h1>Buttons</h1>
+										<p>
+											It gives user interface elements
+											that serve various functions. They
+											are used for actions like submitting
+											forms, navigating to different
+											pages, triggering specific
+											functions, or initiating processes.
+										</p>
+									</div>
+
+									<div class="col-md-6">
+										<div class="border-1 my-3 bg-light">
+											<table class="table">
+												<thead
+													class="table-success table-thead"
+												>
+													<tr>
+														<th scope="col">
+															Variations
+														</th>
+														<th scope="col">
+															Examples
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">
+															<a
+																href="#classic-buttons"
+																>Classic
+																Buttons</a
+															>
+														</th>
+														<td>
+															<button
+																type="button"
+																class="btn btn-success"
+															>
+																Example
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">
+															<a
+																href="#outline-buttons"
+																>Outline
+																Buttons</a
+															>
+														</th>
+														<td>
+															<button
+																type="button"
+																class="btn btn-outline-success"
+															>
+																Example
+															</button>
+														</td>
+													</tr>
+
+													<tr>
+														<th scope="row">
+															<a
+																href="#size-buttons"
+																>Size Buttons</a
+															>
+														</th>
+														<td>
+															<button
+																type="button"
+																class="btn btn-success btn-sm"
+															>
+																Small
+															</button>
+														</td>
+													</tr>
+
+													<tr>
+														<th scope="row">
+															<a
+																href="#icon-buttons"
+																>Icon Buttons</a
+															>
+														</th>
+														<td>
+															<button
+																type="button"
+																class="btn btn-success m-1"
+															>
+																<i
+																	class="bi bi-heart"
+																></i>
+															</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- BUTTONS INTRO END -->
+
+								<!-- BUTTONS CONTENT SAMPLE 1  START -->
+								<div class="row p-3" id="classic-buttons">
+									<h6>Classic Buttons</h6>
+									<p class="text mb-3">
+										Classic buttons are often styled with a
+										straightforward and timeless design,
+										making them a widely recognized and
+										user-friendly element in web interfaces.
+										Use the proper styling class
+										<code>btn btn-primary</code>.
+									</p>
+									<div class="card border-1 mt-3">
+										<!-- cloud instruction start here  -->
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														Consist of a labeled
+														area that users can
+														click or tap to perform
+														specific actions, such
+														as submitting forms,
+														navigating between
+														pages, or initiating
+														various functions.
+													</span>
+												</div>
+											</div>
+										</div>
+										<!-- cloud instruction end here  -->
+
+										<div class="alert">
+											<div
+												class="d-flex-md justify-content-start align-content-center p-1 mb-3"
+											>
+												<button
+													type="button"
+													class="btn btn-primary btn-primarySample1"
+												>
+													Primary
+												</button>
+												<button
+													type="button"
+													class="btn btn-secondary btn-primarySample2"
+												>
+													Secondary
+												</button>
+												<button
+													type="button"
+													class="btn btn-success btn-primarySample3"
+												>
+													Success
+												</button>
+												<button
+													type="button"
+													class="btn btn-danger btn-primarySample4"
+												>
+													Danger
+												</button>
+												<button
+													type="button"
+													class="btn btn-warning btn-primarySample5"
+												>
+													Warning
+												</button>
+												<button
+													type="button"
+													class="btn btn-info btn-primarySample6"
+												>
+													Info
+												</button>
+												<button
+													type="button"
+													class="btn btn-light btn-primarySample7"
+												>
+													Light
+												</button>
+												<button
+													type="button"
+													class="btn btn-dark btn-primarySample8"
+												>
+													Dark
+												</button>
+											</div>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+												<code>
+&lt;button type="button" class="btn btn-primary">Primary&lt;/button>
+&lt;button type="button" class="btn btn-secondary">Secondary&lt;/button>
+&lt;button type="button" class="btn btn-success">Success&lt;/button>
+&lt;button type="button" class="btn btn-danger">Danger&lt;/button>
+&lt;button type="button" class="btn btn-warning">Warning&lt;/button>
+&lt;button type="button" class="btn btn-info">Info&lt;/button>
+&lt;button type="button" class="btn btn-light">Light&lt;/button>
+&lt;button type="button" class="btn btn-dark">Dark&lt;/button>
+	
+												</code>
+											</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- BUTTONS CONTENT SAMPLE 1 END -->
+
+								<!-- BUTTONS CONTENT SAMPLE 2  START -->
+								<div class="row p-3" id="outline-buttons">
+									<h6>Outline Buttons</h6>
+									<p class="text mb-3">
+										These buttons are characterized by their
+										transparent or minimal fill and a
+										visible border that outlines the
+										button's shape. Use the proper styling
+										class
+										<code>btn btn-outline-primary</code>.
+									</p>
+									<div class="card border-1 mt-3">
+										<!-- cloud instruction start here  -->
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														It provide a clean and
+														understated appearance,
+														making them suitable for
+														secondary or less
+														prominent actions.
+													</span>
+												</div>
+											</div>
+										</div>
+										<!-- cloud instruction end here  -->
+
+										<div class="alert">
+											<div
+												class="d-flex-md justify-content-start align-content-center p-1 mb-3"
+											>
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-outline-primary-sample1"
+												>
+													Primary
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-secondary btn-outline-primary-sample2"
+												>
+													Secondary
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-success btn-outline-primary-sample3"
+												>
+													Success
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-danger btn-outline-primary-sample4"
+												>
+													Danger
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-warning btn-outline-primary-sample5"
+												>
+													Warning
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-info btn-outline-primary-sample6"
+												>
+													Info
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-light btn-outline-primary-sample7"
+												>
+													Light
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-dark btn-outline-primary-sample8"
+												>
+													Dark
+												</button>
+											</div>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+												<code>
+
+
+&lt;button type="button" class="btn btn-outline-primary">Primary&lt;/button>
+&lt;button type="button" class="btn btn-outline-secondary">Secondary&lt;/button>
+&lt;button type="button" class="btn btn-outline-success">Success&lt;/button>
+&lt;button type="button" class="btn btn-outline-danger">Danger&lt;/button>
+&lt;button type="button" class="btn btn-outline-warning">Warning&lt;/button>
+&lt;button type="button" class="btn btn-outline-info">Info&lt;/button>
+&lt;button type="button" class="btn btn-outline-light">Light&lt;/button>
+&lt;button type="button" class="btn btn-outline-dark">Dark&lt;/button>
+												</code>
+											</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- BUTTONS CONTENT SAMPLE 2 END -->
+
+								<!-- BUTTONS CONTENT SAMPLE 3 START -->
+								<div class="row p-3" id="size-buttons">
+									<h6>Size Buttons</h6>
+									<p class="text mb-3">
+										They are available in various sizes,
+										from small to large, and are used to
+										visually emphasize the importance or
+										significance of a particular action. Add
+										<code>.btn-lg</code> or
+										<code>.btn-sm</code> for additional
+										sizes.
+									</p>
+									<div class="card border-1 mt-3">
+										<!-- cloud instruction start here  -->
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														Smaller size buttons are
+														often employed for less
+														prominent actions, while
+														larger size buttons draw
+														attention to primary or
+														critical functions.
+													</span>
+												</div>
+											</div>
+										</div>
+										<!-- cloud instruction end here  -->
+
+										<div class="alert">
+											<!-- SMALL BUTTON START -->
+											<h6 class="size-button-heading">
+												Small Buttons
+											</h6>
+											<div
+												class="d-flex-md justify-content-start align-content-center p-1 mb-3"
+											>
+												<button
+													type="button"
+													class="btn btn-primary btn-sm btn-lg-sample1"
+												>
+													Small button
+												</button>
+												<button
+													type="button"
+													class="btn btn-secondary btn-sm btn-lg-sample2"
+												>
+													Small button
+												</button>
+											</div>
+
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+											<code>
+&lt;button type="button" class="btn btn-primary btn-sm">Small button&lt;/button>
+&lt;button type="button" class="btn btn-secondary btn-sm">Small button&lt;/button>
+											</code>
+										</pre>
+											</div>
+										</div>
+										<!-- SMALL BUTTON END -->
+
+										<!-- Large Button Start -->
+										<div class="alert">
+											<h6 class="size-button-heading">
+												Large Buttons
+											</h6>
+											<div
+												class="d-flex-md justify-content-start align-content-center p-1 mb-3"
+											>
+												<button
+													type="button"
+													class="btn btn-primary btn-lg btn-lg-sample1"
+												>
+													Large button
+												</button>
+												<button
+													type="button"
+													class="btn btn-secondary btn-lg btn-lg-sample2"
+												>
+													Large button
+												</button>
+											</div>
+
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+											<code>
+&lt;button type="button" class="btn btn-primary btn-lg">Large button&lt;/button>
+&lt;button type="button" class="btn btn-secondary btn-lg">Large button&lt;/button>
+											</code>
+										</pre>
+											</div>
+										</div>
+										<!-- Large Button Start -->
+									</div>
+								</div>
+								<!-- BUTTONS CONTENT SAMPLE 3 END -->
+
+								<!-- BUTTONS CONTENT SAMPLE 4 START -->
+								<div class="row p-3" id="icon-buttons">
+									<h6>Icon Buttons</h6>
+									<p class="text mb-3">
+										These buttons leverage icons to
+										represent specific actions or functions,
+										allowing users to quickly understand and
+										interact with the interface. Use the
+										proper styling class
+										<code
+											>&lt;i class="fa-regular fa-heart"
+											>&lt;/i></code
+										>.
+									</p>
+									<div class="card border-1 mt-3">
+										<!-- cloud instruction start here  -->
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														It provide conveying
+														information or actions
+														through visual symbols,
+														making them a versatile
+														and visually appealing
+														component in web design.
+													</span>
+												</div>
+											</div>
+										</div>
+										<!-- cloud instruction end here  -->
+
+										<div class="alert">
+											<div
+												class="d-flex-md justify-content-start align-content-center p-1 mb-3"
+											>
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-outline-primary-sample1"
+												>
+													<i
+														class="fa-regular fa-heart"
+													></i>
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-secondary btn-outline-primary-sample2"
+												>
+													<i
+														class="fa-solid fa-house"
+													></i>
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-success btn-outline-primary-sample3"
+												>
+													<i
+														class="fa-solid fa-download"
+													></i>
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-danger btn-outline-primary-sample4"
+												>
+													<i
+														class="fa-solid fa-cart-shopping"
+													></i>
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-warning btn-outline-primary-sample5"
+												>
+													<i
+														class="fa-solid fa-triangle-exclamation"
+													></i>
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-info btn-outline-primary-sample6"
+												>
+													<i
+														class="fa-solid fa-bars-staggered"
+													></i>
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-light btn-outline-primary-sample7"
+												>
+													<i
+														class="fa-solid fa-check"
+													></i>
+												</button>
+												<button
+													type="button"
+													class="btn btn-outline-dark btn-outline-primary-sample8"
+												>
+													<i
+														class="fa-solid fa-magnifying-glass"
+													></i>
+												</button>
+											</div>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+												<code>
+
+
+&lt;button type="button" class="btn btn-outline-primary">&lt;i class="fa-regular fa-heart">&lt;/i>&lt;/button>
+&lt;button type="button" class="btn btn-outline-secondary">&lt;i class="fa-solid fa-house">&lt;/i>&lt;/button>
+&lt;button type="button" class="btn btn-outline-success">&lt;i class="fa-solid fa-download">&lt;/i>&lt;/button>
+&lt;button type="button" class="btn btn-outline-danger">&lt;i class="fa-solid fa-cart-shopping">&lt;/i>&lt;/button>
+&lt;button type="button" class="btn btn-outline-warning">&lt;i class="fa-solid fa-triangle-exclamation">&lt;/i>&lt;/button>
+&lt;button type="button" class="btn btn-outline-info">&lt;i class="fa-solid fa-bars-staggered">&lt;/i>&lt;/button>
+&lt;button type="button" class="btn btn-outline-light">&lt;i class="fa-solid fa-check">&lt;/i>&lt;/button>
+&lt;button type="button" class="btn btn-outline-dark">&lt;i class="fa-solid fa-magnifying-glass">&lt;/i>&lt;/button>
+												</code>
+											</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- BUTTONS CONTENT SAMPLE 4 START -->
+							</div>
+							<!-- BUTTONS END -->
+
+							<!-- CARDS START HERE -->
+							<div
+								class="entry-content"
+								id="cards"
+								data-show-first="true"
+							>
+								<!-- CARDS INTRO START -->
+								<div class="row p-3">
+									<div class="col-md-6">
+										<h1>Cards</h1>
+										<p>
+											Cards are versatile and modular
+											components used in web design to
+											display various types of content.
+											These cards feature a structured
+											container for presenting content,
+											such as text, images, or interactive
+											elements. They are enhanced with a
+											header section at the top and a
+											footer section at the bottom.
+										</p>
+									</div>
+
+									<div class="col-md-6">
+										<div class="border-1 my-3 bg-light">
+											<table class="table">
+												<thead
+													class="table-success table-thead"
+												>
+													<tr>
+														<th scope="col">
+															Type
+														</th>
+														<th scope="col">
+															Description
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">
+															<a
+																href="#cards-with-button"
+																>Cards with
+																Buttons</a
+															>
+														</th>
+														<td>
+															Use to design
+															element commonly
+															used in web
+															interfaces.
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">
+															<a
+																href="#cards-header-footer"
+																>Cards with
+																Header &
+																Footer</a
+															>
+														</th>
+														<td>
+															modular components
+															frequently found in
+															web design.
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- CARDS INTRO END -->
+
+								<!-- CARDS SAMPLE 1 START -->
+								<div class="row p-3" id="cards-with-button">
+									<h6>Cards with Buttons</h6>
+									<p class="text mb-3">
+										These cards consist of a structured
+										container displaying content, such as
+										text <code>card-text</code> and images
+										<code>card-img-top</code>, along with an
+										interactive button
+										<code>btn btn-primary</code>.
+									</p>
+									<div class="card border-1 mt-3">
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														This design approach
+														combines information
+														presentation with a
+														clear and actionable
+														call to action, making
+														it user-friendly and
+														effective in guiding
+														users to take desired
+														actions or explore
+														additional content.
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="alert">
+											<div
+												class="card alert card-style"
+												style="width: 18rem"
+											>
+												<img
+													src="https://via.placeholder.com/286x180"
+													class="card-img-top"
+													alt="..."
+												/>
+												<div class="card-body">
+													<h5 class="card-title">
+														Card title
+													</h5>
+													<p class="card-text">
+														Some quick example text
+														to build on the card
+														title and make up the
+														bulk of the card's
+														content.
+													</p>
+													<a
+														href="#"
+														class="btn btn-primary btn-card"
+														>Go somewhere</a
+													>
+												</div>
+											</div>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+											<code>
+
+&lt;div class="card" style="width: 18rem;">
+&nbsp;&nbsp;&lt;img src="..." class="card-img-top" alt="...">
+&nbsp;&lt;div class="card-body">
+&nbsp;&nbsp;&nbsp;&lt;h5 class="card-title">Card title&lt;/h5>
+&nbsp;&nbsp;&nbsp;&lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p>
+&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-primary">Go somewhere&lt;/a>
+&nbsp;&lt;/div>
+&lt;/div>
+											</code>
+										</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- CARDS SAMPLE 1 END -->
+
+								<!-- CARDS SAMPLE 2 START -->
+								<div class="row p-3" id="cards-header-footer">
+									<h6>Cards with Header and Footer</h6>
+									<p class="text mb-3">
+										The header
+										<code>card-header</code> typically
+										contains a title or key information
+										about the content, while the footer
+										<code>card-body</code> may include
+										additional details, actions, or
+										attribution.
+									</p>
+									<div class="card border-1 mt-3">
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														This layout provides a
+														clear and organized way
+														to showcase content and
+														supplementary
+														information, improving
+														the user experience by
+														presenting content in a
+														structured and visually
+														appealing format
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="alert">
+											<div class="card alert card-style">
+												<div class="card-header">
+													Featured
+												</div>
+												<div class="card-body">
+													<h5 class="card-title">
+														Special title treatment
+													</h5>
+													<p class="card-text">
+														With supporting text
+														below as a natural
+														lead-in to additional
+														content.
+													</p>
+													<a
+														href="#"
+														class="btn btn-primary btn-card"
+														>Go somewhere</a
+													>
+												</div>
+											</div>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+											<code>
+
+&lt;div class="card">
+	&lt;div class="card-header">
+	  Featured
+	&lt;/div>
+	&lt;div class="card-body">
+	  &lt;h5 class="card-title">Special title treatment&lt;/h5>
+	  &lt;p class="card-text">With supporting text below as a natural lead-in to additional content.&lt;/p>
+	  &lt;a href="#" class="btn btn-primary">Go somewhere&lt;/a>
+	&lt;/div>
+&lt;/div>
+											</code>
+										</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- CARDS SAMPLE 2 END -->
+							</div>
+							<!-- CARDS END HERE -->
+
+							<!-- NAVBAR START HERE -->
+							<div
+								class="entry-content"
+								id="navbars"
+								data-show-first="true"
+							>
+								<!-- NAVBAR INTRO START -->
+								<div class="row p-3">
+									<div class="col-md-6">
+										<h1>Navbar</h1>
+										<p>
+											A navbar, short for 'navigation
+											bar,' is a fundamental user
+											interface element in web design. It
+											is typically a horizontal or
+											vertical strip containing links,
+											buttons, or menus that help users
+											navigate a website.
+										</p>
+									</div>
+
+									<div class="col-md-6">
+										<div class="border-1 my-3 bg-light">
+											<table class="table">
+												<thead
+													class="table-success table-thead"
+												>
+													<tr>
+														<th scope="col">
+															Type
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">
+															<a
+																href="#navbar-search-bar"
+																>Navbar with
+																Search Bar</a
+															>
+														</th>
+													</tr>
+													<tr>
+														<th scope="row">
+															<a
+																href="#simple-navbar"
+																>Simple
+																Navbar</a
+															>
+														</th>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- NAVBAR INTRO END -->
+
+								<!-- NAVBAR SAMPLE 1 START -->
+								<div class="row p-3" id="navbar-search-bar">
+									<h6>Navbar with Search Bar</h6>
+
+									<p class="text mb-3">
+										Navbars come with built-in support for a
+										handful of sub-components. Choose from
+										the following as needed:
+									</p>
+									<div class="card border-0 mt-3">
+										<ul>
+											<li>
+												<code>.navbar-brand</code>
+												<span>
+													for your company, product,
+													or project name.</span
+												>
+											</li>
+
+											<li>
+												<code>.navbar-nav</code>
+												<span>
+													for a full-height and
+													lightweight navigation
+													(including support for
+													dropdowns).</span
+												>
+											</li>
+
+											<li>
+												<code>.navbar-toggler</code>
+												<span>
+													for use with our collapse
+													plugin and other navigation
+													toggling behaviors.</span
+												>
+											</li>
+
+											<li>
+												<code>.form-inline</code>
+												<span>
+													for any form controls and
+													actions.</span
+												>
+											</li>
+
+											<li>
+												<code>.navbar-text</code>
+												<span>
+													for adding vertically
+													centered strings of
+													text.</span
+												>
+											</li>
+
+											<li>
+												<code
+													>.collapse.navbar-collapse</code
+												>
+												<span>
+													for grouping and hiding
+													navbar contents by a parent
+													breakpoint.</span
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="card border-1 mt-3">
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														This allows users to
+														perform search queries
+														directly from the
+														navbar, providing a
+														convenient and efficient
+														way to find specific
+														content or information
+														on the website.
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="alert">
+											<nav
+												class="navbar navbar-expand-lg navbar-light bg-light"
+											>
+												<a class="navbar-brand" href="#"
+													>Navbar</a
+												>
+												<button
+													class="navbar-toggler"
+													type="button"
+													data-toggle="collapse"
+													data-target="#navbarSupportedContent"
+													aria-controls="navbarSupportedContent"
+													aria-expanded="false"
+													aria-label="Toggle navigation"
+												>
+													<span
+														class="navbar-toggler-icon"
+													></span>
+												</button>
+
+												<div
+													class="collapse navbar-collapse"
+													id="navbarSupportedContent"
+												>
+													<ul
+														class="navbar-nav mr-auto"
+													>
+														<li
+															class="nav-item active"
+														>
+															<a
+																class="nav-link"
+																href="#"
+																>Home
+																<span
+																	class="sr-only"
+																	>(current)</span
+																></a
+															>
+														</li>
+														<li class="nav-item">
+															<a
+																class="nav-link"
+																href="#"
+																>Link</a
+															>
+														</li>
+														<li
+															class="nav-item dropdown"
+														>
+															<a
+																class="nav-link dropdown-toggle"
+																href="#"
+																id="navbarDropdown"
+																role="button"
+																data-toggle="dropdown"
+																aria-haspopup="true"
+																aria-expanded="false"
+															>
+																Dropdown
+															</a>
+															<div
+																class="dropdown-menu"
+																aria-labelledby="navbarDropdown"
+															>
+																<a
+																	class="dropdown-item"
+																	href="#"
+																	>Action</a
+																>
+																<a
+																	class="dropdown-item"
+																	href="#"
+																	>Another
+																	action</a
+																>
+																<div
+																	class="dropdown-divider"
+																></div>
+																<a
+																	class="dropdown-item"
+																	href="#"
+																	>Something
+																	else here</a
+																>
+															</div>
+														</li>
+													</ul>
+													<form
+														class="form-inline my-2 my-lg-0"
+													>
+														<input
+															class="form-control mr-sm-2"
+															type="search"
+															placeholder="Search"
+															aria-label="Search"
+														/>
+														<button
+															class="btn btn-outline-success my-2 my-sm-0 btn-outline-primary-sample1"
+															type="submit"
+														>
+															Search
+														</button>
+													</form>
+												</div>
+											</nav>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+											<code>
+&lt;nav class="navbar navbar-expand-lg navbar-light bg-light">
+	&lt;a class="navbar-brand" href="#">Navbar&lt;/a>
+	&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  &lt;span class="navbar-toggler-icon">&lt;/span>
+	&lt;/button>
+  
+	&lt;div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  &lt;ul class="navbar-nav mr-auto">
+		&lt;li class="nav-item active">
+		  &lt;a class="nav-link" href="#">Home &lt;span class="sr-only">(current)&lt;/span>&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item">
+		  &lt;a class="nav-link" href="#">Link&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item dropdown">
+		  &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Dropdown
+		  &lt;/a>
+		  &lt;div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			&lt;a class="dropdown-item" href="#">Action&lt;/a>
+			&lt;a class="dropdown-item" href="#">Another action&lt;/a>
+			&lt;div class="dropdown-divider">&lt;/div>
+			&lt;a class="dropdown-item" href="#">Something else here&lt;/a>
+		  &lt;/div>
+		&lt;/li>
+		&lt;li class="nav-item">
+		  &lt;a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled&lt;/a>
+		&lt;/li>
+	  &lt;/ul>
+	  &lt;form class="form-inline my-2 my-lg-0">
+		&lt;input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		&lt;button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search&lt;/button>
+	  &lt;/form>
+	&lt;/div>
+&lt;/nav>
+											</code>
+										</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- NAVBAR SAMPLE 1 END -->
+
+								<!-- NAVBAR SAMPLE 2 START -->
+								<div class="row p-3" id="simple-navbar">
+									<h6>Simple Navbar</h6>
+									<p class="text mb-3">
+										Simple navbars are designed for clean
+										and minimalistic aesthetics, making it
+										easy for users to access essential
+										sections or pages of a website.
+									</p>
+									<p>
+										Active states—with
+										<code>.active</code>—to indicate the
+										current page can be applied directly to
+										<code>.nav-links</code> or their
+										immediate parent <code>.nav-item</code>.
+									</p>
+									<div class="card border-1 mt-3">
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														It prioritize ease of
+														use and uncluttered
+														design, providing a
+														user-friendly means of
+														navigation for an
+														efficient and
+														straightforward user
+														experience.
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="alert">
+											<nav
+												class="navbar navbar-expand-lg navbar-light bg-light"
+											>
+												<a class="navbar-brand" href="#"
+													>Navbar</a
+												>
+												<button
+													class="navbar-toggler"
+													type="button"
+													data-toggle="collapse"
+													data-target="#navbarNav"
+													aria-controls="navbarNav"
+													aria-expanded="false"
+													aria-label="Toggle navigation"
+												>
+													<span
+														class="navbar-toggler-icon"
+													></span>
+												</button>
+												<div
+													class="collapse navbar-collapse"
+													id="navbarNav"
+												>
+													<ul class="navbar-nav">
+														<li
+															class="nav-item active"
+														>
+															<a
+																class="nav-link"
+																href="#navbarNav"
+																>Home
+																<span
+																	class="sr-only"
+																	>(current)</span
+																></a
+															>
+														</li>
+														<li class="nav-item">
+															<a
+																class="nav-link"
+																href="#navbarNav"
+																>Features</a
+															>
+														</li>
+														<li class="nav-item">
+															<a
+																class="nav-link"
+																href="#navbarNav"
+																>About Us</a
+															>
+														</li>
+														<li class="nav-item">
+															<a
+																class="nav-link disabled"
+																href="#"
+																tabindex="-1"
+																aria-disabled="true"
+																>Disabled</a
+															>
+														</li>
+													</ul>
+												</div>
+											</nav>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+											<code>
+&lt;nav class="navbar navbar-expand-lg navbar-light bg-light">
+	&lt;a class="navbar-brand" href="#">Navbar&lt;/a>
+	&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  &lt;span class="navbar-toggler-icon">&lt;/span>
+	&lt;/button>
+	&lt;div class="collapse navbar-collapse" id="navbarNav">
+	  &lt;ul class="navbar-nav">
+		&lt;li class="nav-item active">
+		  &lt;a class="nav-link" href="#">Home &lt;span class="sr-only">(current)&lt;/span>&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item">
+		  &lt;a class="nav-link" href="#">Features&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item">
+		  &lt;a class="nav-link" href="#">Pricing&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item">
+		  &lt;a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled&lt;/a>
+		&lt;/li>
+	  &lt;/ul>
+	&lt;/div>
+&lt;/nav>
+											</code>
+										</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- NAVBAR SAMPLE 2 END -->
+							</div>
+
+							<!-- NAVBAR END HERE -->
+
+							<!-- SPINNERS START HERE -->
+							<div
+								class="entry-content"
+								id="spinners"
+								data-show-first="true"
+							>
+								<!-- SPINNER INTRO START -->
+								<div class="row p-3">
+									<div class="col-md-6">
+										<h1>Spinner</h1>
+										<p>
+											A spinner is a user interface
+											component often used in web and
+											mobile applications to indicate
+											ongoing processes or loading
+											activities. It typically appears as
+											a rotating, animated graphic, often
+											a circular or linear design, that
+											serves as a visual indicator of
+											progress.
+										</p>
+									</div>
+
+									<div class="col-md-6">
+										<div class="border-1 my-3 bg-light">
+											<table class="table">
+												<thead
+													class="table-success table-thead"
+												>
+													<tr>
+														<th scope="col">
+															Type
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">
+															<a
+																href="#simple-spinner"
+																>Simple
+																Spinner</a
+															>
+														</th>
+													</tr>
+													<tr>
+														<th scope="row">
+															<a
+																href="#color-spinner"
+																>Color
+																Spinner</a
+															>
+														</th>
+													</tr>
+
+													<tr>
+														<th scope="row">
+															<a
+																href="#breathing-spinner"
+																>Breathing
+																Spinner</a
+															>
+														</th>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- SPINNER INTRO END -->
+
+								<!-- SPIINER SAMPLE 1 START -->
+								<div class="row p-3" id="simple-spinner">
+									<h6>Simple Spinner</h6>
+
+									<p class="text mb-3">
+										It is typically a minimalistic, animated
+										graphic, often circular or linear, used
+										to indicate ongoing processes or loading
+										activities in web and mobile
+										applications.
+									</p>
+									<p class="text mb-3">
+										For accessibility purposes, each loader
+										here includes
+										<code>role="status"</code> and a nested
+										<code
+											>&lt;span
+											class="sr-only">Loading...&lt;/span></code
+										>
+										.
+									</p>
+
+									<div class="card border-1 mt-3">
+										<div
+											class="alert alert-simple d-flex align-items-start"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														Prioritize functionality
+														over elaborate design,
+														serving as a
+														straightforward visual
+														cue to inform users
+														about task progress,
+														helping manage their
+														expectations during
+														loading or processing
+														operations for a better
+														user experience.
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="alert">
+											<div
+												class="d-flex justify-content-center"
+											>
+												<div
+													class="spinner-border spinner-border-sample1"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+											</div>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+											<code>
+&lt;div class="d-flex justify-content-center">
+	&nbsp;&lt;div class="spinner-border" role="status">
+	&nbsp;&nbsp;&lt;span class="sr-only">Loading...&lt;/span>
+	&nbsp;&lt;/div>
+&lt;/div>
+											</code>
+										</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SPIINER SAMPLE 1 END -->
+
+								<!-- SPIINER SAMPLE 2 START -->
+								<div class="row p-3" id="color-spinner">
+									<h6>Color Spinner</h6>
+									<p class="text mb-3">
+										It serves as a dynamic indicator of
+										ongoing processes or loading activities,
+										with the added element of color to make
+										the animation more engaging and
+										attention-grabbing
+									</p>
+									<p>
+										The color spinner uses
+										<code>spinner-border</code> for its
+										border, while for its color
+										<code>text-primary</code>, meaning you
+										can customize the color with text color
+										utilities. You can use any of our text
+										color utilities on the standard spinner.
+									</p>
+									<div class="card border-1 mt-3">
+										<div
+											class="alert d-flex justify-content-center"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														Color spinners not only
+														inform users about task
+														progress but also add an
+														aesthetic dimension to
+														the user interface,
+														enhancing the overall
+														user experience with a
+														touch of visual appeal
+														and interactivity.
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="alert">
+											<div
+												class="d-flex justify-content-center color-spinner"
+											>
+												<div
+													class="spinner-border text-primary text-primary-sample1"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+												<div
+													class="spinner-border text-secondary text-primary-sample2"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+												<div
+													class="spinner-border text-success text-primary-sample3"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+												<div
+													class="spinner-border text-danger text-primary-sample5"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+												<div
+													class="spinner-border text-warning text-primary-sample6"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+											</div>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+											<code>
+&lt;div class="spinner-border text-primary" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+  &lt;/div>
+  &lt;div class="spinner-border text-secondary" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+  &lt;/div>
+  &lt;div class="spinner-border text-success" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+  &lt;/div>
+  &lt;div class="spinner-border text-danger" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+  &lt;/div>
+  &lt;div class="spinner-border text-warning" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+  &lt;/div>
+  &lt;div class="spinner-border text-info" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+&lt;/div>
+											</code>
+										</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SPIINER SAMPLE 2 END -->
+
+								<!-- SPIINER SAMPLE 3 START -->
+								<div class="row p-3" id="breathing-spinner">
+									<h6>Breathing Spinner</h6>
+									<p class="text mb-3">
+										If you're not a fan of the border
+										spinner, you can switch to the breathing
+										spinner <code>spinner-grow</code>.
+										Although it doesn't spin in the
+										traditional sense, it continually
+										expands and contracts.
+									</p>
+
+									<div class="card border-1 mt-3">
+										<div
+											class="alert d-flex justify-content-center"
+										>
+											<div class="alert-message">
+												<div class="alert-message-text">
+													<i
+														class="fa-solid fa-cloud"
+													></i>
+													<span>
+														Color spinners not only
+														inform users about task
+														progress but also add an
+														aesthetic dimension to
+														the user interface,
+														enhancing the overall
+														user experience with a
+														touch of visual appeal
+														and interactivity.
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="alert">
+											<div
+												class="d-flex justify-content-center color-spinner"
+											>
+												<div
+													class="spinner-grow text-primary text-primary-sample1"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+												<div
+													class="spinner-grow text-secondary text-primary-sample2"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+												<div
+													class="spinner-grow text-success text-primary-sample3"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+												<div
+													class="spinner-grow text-danger text-primary-sample4"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+												<div
+													class="spinner-grow text-warning text-primary-sample5"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+												<div
+													class="spinner-grow text-info text-primary-sample6"
+													role="status"
+												>
+													<span class="sr-only"
+														>Loading...</span
+													>
+												</div>
+											</div>
+											<div class="card border-0">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+
+												<pre>
+											<code>
+&lt;div class="spinner-grow text-primary" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+  &lt;/div>
+  &lt;div class="spinner-grow text-secondary" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+  &lt;/div>
+  &lt;div class="spinner-grow text-success" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+  &lt;/div>
+  &lt;div class="spinner-grow text-danger" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+  &lt;/div>
+  &lt;div class="spinner-grow text-warning" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+  &lt;/div>
+  &lt;div class="spinner-grow text-info" role="status">
+	&lt;span class="sr-only">Loading...&lt;/span>
+&lt;/div>
+											</code>
+										</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SPIINER SAMPLE 3 END -->
+							</div>
+							<!-- SPINNERS END HERE -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p>
+							Copyright 2023, Internet & Web Applications.
+							INFO-3171-(01)-2023 Fall
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#" id="totop"><i class="bi bi-arrow-up-short"></i></a>
+		<script type="text/javascript" src="./assets/js/slick.min.js"></script>
+		<script type="text/javascript" src="./assets/js/slider.js"></script>
+		<script type="text/javascript" src="./assets/js/toTop.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var entryContents = document.querySelectorAll(".entry-content");
+				var preloader = document.getElementById("preloader");
+				var miniTabItems =
+					document.querySelectorAll("#mini-tab .mt-el");
+				var contentHolder = document.getElementById("content-holder");
+
+				// Function to add the "disable-this" class to all .mt-el elements
+				function addDisableClass() {
+					miniTabItems.forEach(function (mtEl) {
+						mtEl.classList.add("disable-this");
+					});
+				}
+
+				// Function to remove the "disable-this" class from all .mt-el elements
+				function removeDisableClass() {
+					miniTabItems.forEach(function (mtEl) {
+						mtEl.classList.remove("disable-this");
+					});
+				}
+
+				// Handle clicking on .mt-el elements
+				miniTabItems.forEach(function (item) {
+					item.addEventListener("click", function () {
+						// Add the "disable-this" class to all .mt-el elements
+						addDisableClass();
+
+						// Hide all entry-content elements
+						entryContents.forEach(function (entryContent) {
+							entryContent.style.display = "none";
+						});
+
+						// Remove the .active class from all .mt-el elements
+						miniTabItems.forEach(function (mtEl) {
+							mtEl.classList.remove("active");
+						});
+
+						// Add the .active class to the clicked .mt-el
+						item.classList.add("active");
+
+						// Get the value of the data-tab attribute
+						var tabValue = item.getAttribute("data-tab");
+
+						// Show the preloader
+						preloader.style.display = "block";
+
+						// After 2 seconds, show the target content
+						setTimeout(function () {
+							preloader.style.display = "none";
+
+							// Remove the "disable-this" class from all .mt-el elements
+							removeDisableClass();
+
+							// Display the content with the matching ID
+							var showContent = document.getElementById(tabValue);
+							if (showContent) {
+								showContent.style.display = "block";
+							}
+						}, 2000);
+					});
+				});
+
+				// Initially, select the first .mt-el and trigger a click event
+				if (miniTabItems.length > 0) {
+					miniTabItems[0].click();
+				}
+			});
+		</script>
+
+		<style>
+			a.disabled-link {
+				pointer-events: none;
+				text-decoration: none;
+				color: gray;
+				cursor: not-allowed;
+			}
+		</style>
+	</body>
+</html>
