@@ -11,34 +11,20 @@ h6 {
 .table-thead {
 	background: var(--primary-color);
 }
-.alert-message {
-	background-color: var(--functional-color-2);
-	padding: 10px 10px 10px 40px;
-	border-radius: 5px;
-}
+
 .alert-message-text {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.fa-cloud {
-	font-size: 2rem;
-	margin-right: 2rem;
-	color: var(--primary-color);
-}
+
 .fa-circle-exclamation {
 	margin-right: 0.6rem;
 	font-size: 1.3rem;
 }
-pre {
-	overflow-x: auto;
-	word-wrap: break-word;
-	padding: 15px 12px;
-	background-color: var(--feedback-color-5);
-	border-radius: 5px;
-	width: auto;
-	tab-size: 0;
-	margin-bottom: 0 !important;
+
+.heading-message {
+	display: flex;
 }
 .btn-copy {
 	position: absolute;
@@ -51,9 +37,7 @@ pre {
 	background-color: var(--feedback-color-4);
 	border: 1;
 }
-.heading-message {
-	display: flex;
-}
+
 .btn-close {
 	position: absolute;
 	top: 5px;

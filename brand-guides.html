@@ -1,391 +1,821 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="./assets/css/default.css" />
+		<link rel="stylesheet" href="./assets/css/navbar.css" />
+		<link rel="stylesheet" href="./assets/css/interior.css" />
+		<link rel="stylesheet" href="./assets/css/left-nav.css" />
+		<link rel="stylesheet" href="./assets/css/entry-content.css" />
+		<link rel="stylesheet" href="./assets/css/brand-guides.css" />
+		<title>
+			Project 1 User Interface - INFO-3171-(01)-2023 Fall - Brand Guides
+		</title>
+	</head>
 
-    <link rel="stylesheet" href="./assets/css/default.css" />
-    <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/interior.css" />
-    <link rel="stylesheet" href="./assets/css/left-nav.css" />
-    <link rel="stylesheet" href="./assets/css/entry-content.css" />
-    <link rel="stylesheet" href="./assets/css/brand-guides.css" />
-    <title>Project 1 User Interface - INFO-3171-(01)-2023 Fall - Brand Guides</title>
-</head>
+	<body>
+		<header>
+			<div class="container-fluid">
+				<nav
+					class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+					id="header"
+				>
+					<div class="container">
+						<a class="navbar-brand" href="#">
+							<img
+								src="./assets/images/logo.png"
+								class="d-inline-block align-top logo transition"
+								alt="Logo"
+							/>
+						</a>
+						<button
+							class="navbar-toggler hb-menu"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarNav"
+							aria-controls="navbarNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html"
+										>Home</a
+									>
+								</li>
+								<li class="nav-item active">
+									<a
+										class="nav-link"
+										href="./brand-guides.html"
+										>Brand Guides</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="./data-visualization.html"
+										>Data Visualization</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="./page-layouts.html"
+										>Page Layouts</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link"
+										href="./ui-components.html"
+										>UI Components</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-<body>
-    <header>
-        <div class="container-fluid">
+		<main id="main-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+						<ul id="mini-tab">
+							<li>
+								<a
+									href="#"
+									class="mt-el"
+									data-tab="introduction"
+									data-show-first="true"
+									>Introduction</a
+								>
+							</li>
+							<li>
+								<a href="#" class="mt-el" data-tab="typography"
+									>Typography</a
+								>
+							</li>
+							<li>
+								<a href="#" class="mt-el" data-tab="colors"
+									>Colors</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+						<div id="content-holder">
+							<!-- PRELOADER START -->
+							<div class="" id="preloader">
+								<div class="text-center mt-5">
+									<div
+										class="spinner-border text-primary"
+										role="status"
+									>
+										<span class="sr-only">Loading...</span>
+									</div>
+								</div>
+							</div>
+							<!-- PRELOADER END -->
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="header">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="./assets/images/logo.png" class="d-inline-block align-top logo transition" alt="Logo">
-                    </a>
-                    <button class="navbar-toggler hb-menu" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="./brand-guides.html">Brand Guides</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./data-visualization.html">Data Visualization</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./page-layouts.html">Page Layouts</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./ui-components.html">UI Components</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+							<!-- INTRO START -->
+							<div
+								class="entry-content"
+								id="introduction"
+								data-show-first="true"
+							>
+								<h1>Cloud Vid - Pattern Library</h1>
+								<img
+									src="./assets/images/brand-guides/intro-image.jpg"
+									class="bg__img"
+								/>
 
-        </div>
-    </header>
+								<p>
+									Allow me to present to you an expansive and
+									thorough guide that delves into the artful
+									utilization of Cloud Vid's brand typography
+									and color palette. Within the following
+									comprehensive discourse, you shall embark
+									upon a journey of profound comprehension
+									concerning the various methodologies for
+									employing LiveWire's branding elements and
+									assets in a manner that adheres faithfully
+									to the brand's intrinsic values.
+								</p>
+								<p>
+									This approach will lead to the embodiment of
+									an unwavering passion, the embodiment of
+									swiftness and celerity, and the embodiment
+									of unbridled dynamism, consistently
+									mirroring the brand's unique essence and
+									identity. By meticulously following this
+									guide, you will be equipped with the
+									necessary knowledge and tools to maintain a
+									consistent brand representation that exudes
+									fervor, agility, and boundless energy,
+									thereby establishing a strong and enduring
+									brand identity.
+								</p>
+								<h6>
+									The Cloud Vid UI Kit encompasses the
+									subsequent elements:
+								</h6>
 
-    <main id="main-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+								<div class="list-horizontal">
+									<a
+										href="./ui-components.html"
+										class="list-horizontal--item list-horizontal--current"
+									>
+										<div class="list-horizontal--content">
+											<h5 class="list-horizontal--title">
+												<i class="bi bi-back"></i>
+												UI Components
+											</h5>
+										</div>
+										<span class="list-horizontal--small"
+											>A compendium of foundational
+											elements essential for the
+											construction of a dashboard,
+											commencing from its inception.</span
+										>
+									</a>
+									<a
+										href="./page-layouts.html"
+										class="list-horizontal--item"
+									>
+										<div class="list-horizontal--content">
+											<h5 class="list-horizontal--title">
+												<i
+													class="bi bi-columns-gap"
+												></i>
+												Page Layouts
+											</h5>
+										</div>
+										<span class="list-horizontal--small"
+											>Foundational principles and
+											authoritative guidelines for
+											structuring your web pages and
+											content.</span
+										>
+									</a>
+									<a
+										href="./data-visualization.html"
+										class="list-horizontal--item"
+									>
+										<div class="list-horizontal--content">
+											<h5 class="list-horizontal--title">
+												<i
+													class="bi bi-bar-chart-line"
+												></i>
+												Data Visualization
+											</h5>
+										</div>
+										<span class="list-horizontal--small"
+											>An assemblage of data charts to
+											cater to your visual presentation
+											requirements.</span
+										>
+									</a>
+								</div>
 
-                    <ul id="mini-tab">
-                        <li><a href="#" class="mt-el" data-tab="introduction" data-show-first="true">introduction</a>
-                        </li>
-                        <li><a href="#" class="mt-el" data-tab="typography">typography</a></li>
-                        <li><a href="#" class="mt-el" data-tab="colors">colors</a></li>
-                    </ul>
+								<h6>Getting Started</h6>
+								<p>
+									To commence, ensure that you undertake the
+									following steps.
+								</p>
 
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-
-
-
-                    <div id="content-holder">
-
-                        <!-- PRELOADER START -->
-                        <div class="" id="preloader">
-                            <div class="text-center mt-5">
-                                <div class="spinner-border text-primary" role="status">
-                                    <span class="sr-only">Loading...</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- PRELOADER END -->
-
-                        <!-- INTRO START -->
-                        <div class="entry-content" id="introduction" data-show-first="true">
-                            <h1>Cloud Vid - UI Kit</h1>
-                            <img src="./assets/images/brand-guides/intro-iamge.png" class="bg__img" />
-
-                            <p>Allow me to present to you an expansive and thorough guide that delves into the artful
-                                utilization of Cloud Vid's brand
-                                typography and color palette. Within the following comprehensive discourse, you shall
-                                embark upon a journey of profound
-                                comprehension concerning the various methodologies for employing LiveWire's branding
-                                elements and assets in a manner
-                                that adheres faithfully to the brand's intrinsic values.</p>
-                            <p>This approach will lead to the embodiment of an unwavering passion, the embodiment of
-                                swiftness and celerity, and the
-                                embodiment of unbridled dynamism, consistently mirroring the brand's unique essence and
-                                identity. By meticulously
-                                following this guide, you will be equipped with the necessary knowledge and tools to
-                                maintain a consistent brand
-                                representation that exudes fervor, agility, and boundless energy, thereby establishing a
-                                strong and enduring brand
-                                identity.</p>
-                            <p><strong>The Cloud Vid UI Kit encompasses the subsequent elements:</strong></p>
-
-                            <div class="list-horizontal">
-                                <a href="./ui-components.html" class="list-horizontal--item list-horizontal--current">
-                                    <div class="list-horizontal--content">
-                                        <h5 class="list-horizontal--title">
-                                            <i class="bi bi-exclude"></i>
-                                            UI Components
-                                        </h5>
-                                    </div>
-                                    <small class="list-horizontal--small">A compendium of foundational elements
-                                        essential for the construction of a dashboard, commencing from its
-                                        inception.</small>
-                                </a>
-                                <a href="./page-layouts.html" class="list-horizontal--item">
-                                    <div class="list-horizontal--content">
-                                        <h5 class="list-horizontal--title">
-                                            <i class="bi bi-exclude"></i>
-                                            Page Layouts
-                                        </h5>
-                                    </div>
-                                    <small class="list-horizontal--small">Foundational principles and authoritative
-                                        guidelines for structuring your web pages and content.</small>
-                                </a>
-                                <a href="./data-visualization.html" class="list-horizontal--item">
-                                    <div class="list-horizontal--content">
-                                        <h5 class="list-horizontal--title">
-                                            <i class="bi bi-exclude"></i>
-                                            Data Visualization
-                                        </h5>
-                                    </div>
-                                    <small class="list-horizontal--small">An assemblage of data charts to cater to your
-                                        visual presentation requirements.</small>
-                                </a>
-                            </div>
-
-                            <h5>Getting Started</h5>
-                            <p>To commence, ensure that you undertake the following steps.</p>
-
-                        </div>
-                        <!-- INTRO END -->
-
-                        <!-- TYPO START -->
-                        <div class="entry-content" id="typography">
-                            <h1>Typography</h1>
-                            <p>Lorem <a href="#">ipsum dolor comet senstricakter</a>, stdratocaster, genesis series 3
-                                with metalizer and
-                                waah waah that will blow up your head!!!</p>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up your head!!!</p>
-                            <h2>Introduction</h2>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up
-                                your head!!!</p>
-                            <h3>Introduction</h3>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up
-                                your head!!!</p>
-                            <h4>Introduction</h4>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up
-                                your head!!!</p>
-                            <h5>Introduction</h5>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up
-                                your head!!!</p>
-                            <h6>Introduction</h6>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up
-                                your head!!!</p>
-                            <ul>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will blow up
-                                    your head!!!</li>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will blow
-                                    up
-                                    your head!!!</li>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will blow
-                                    up
-                                    your head!!!</li>
-                            </ul>
-                            <ol>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will
-                                    blow up
-                                    your head!!!</li>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will
-                                    blow
-                                    up
-                                    your head!!!</li>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will
-                                    blow
-                                    up
-                                    your head!!!</li>
-                            </ol>
-                        </div>
-                        <!-- TYPO END -->
-
-                        <!-- COLORS START -->
-                        <div class="entry-content" id="colors">
-                            <h1>Colors</h1>
-                            <p>Lorem <a href="#">ipsum dolor comet senstricakter</a>, stdratocaster, genesis series 3
-                                with metalizer and
-                                waah waah that will blow up your head!!!</p>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up your head!!!</p>
-                            <h2>Introduction</h2>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up
-                                your head!!!</p>
-                            <h3>Introduction</h3>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up
-                                your head!!!</p>
-                            <h4>Introduction</h4>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up
-                                your head!!!</p>
-                            <h5>Introduction</h5>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up
-                                your head!!!</p>
-                            <h6>Introduction</h6>
-                            <p>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with metalizer and
-                                waah waah that will blow up
-                                your head!!!</p>
-                            <ul>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will blow up
-                                    your head!!!</li>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will blow
-                                    up
-                                    your head!!!</li>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will blow
-                                    up
-                                    your head!!!</li>
-                            </ul>
-                            <ol>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will
-                                    blow up
-                                    your head!!!</li>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will
-                                    blow
-                                    up
-                                    your head!!!</li>
-                                <li>Lorem ipsum dolor comet senstricakter, stdratocaster, genesis series 3 with
-                                    metalizer and waah waah that will
-                                    blow
-                                    up
-                                    your head!!!</li>
-                            </ol>
-
-                            <pre>
-<code>
-    &lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Example Page&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;This is an example&lt;/h1&gt;
-        &lt;p&gt;Here is some text.&lt;/p&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
+								<div class="group-list">
+									<ol>
+										<li>
+											<div class="gp--heading">
+												Active Mobile Responsive
+											</div>
+											<div class="gp--subheading">
+												Make sure to incorporate the
+												<code
+													>&lt;meta
+													name="viewport"&gt;</code
+												>
+												tag for effective responsive
+												functionality on mobile devices.
+											</div>
+											<div class="gp--code">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+												<pre>
+                                                <code>
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;LiveWire Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code>
-</pre>
-                        </div>
-                        <!-- COLORS END -->
+                                            </pre>
+											</div>
+										</li>
 
-                    </div>
+										<li>
+											<div class="gp--heading">
+												Incorporate the Bootstrap
+												JavaScript and CSS files.
+											</div>
+											<div class="gp--subheading">
+												Position the tag within the
+												section for our CSS, and the
+												<code>&lt;script&gt;</code> tag
+												for our JavaScript bundle just
+												before the closing
+												<code>&lt;/body&gt;</code> tag.
+											</div>
+											<div class="gp--code">
+												<button
+													type="button"
+													class="btn btn-outline-primary btn-copy"
+												>
+													Copy
+												</button>
+												<pre>
+                                                                                    <code>
+&lt;!--CSS --&gt;
+&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
 
+&lt;!--JS --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                                    </code>
+                                                                                </pre>
+											</div>
+										</li>
+										<li>
+											<div class="gp--heading">
+												Familiarize yourself with the
+												documentation
+											</div>
+											<div class="gp--subheading">
+												Go through the documentation to
+												acquaint yourself with the
+												accessible UI elements
+											</div>
+										</li>
+									</ol>
+								</div>
+							</div>
+							<!-- INTRO END -->
 
+							<!--TYPO START-->
+							<div class="entry-content" id="typography">
+								<div class="tab-text row p-3">
+									<h1>Typhography</h1>
+									<p>
+										Typography refers to the art and
+										technique of arranging and designing
+										text in a visually appealing and
+										readable manner. It encompasses various
+										elements such as font selection, font
+										size, spacing, alignment, and formatting
+										to create an aesthetically pleasing and
+										legible written content.
+									</p>
+									<div class="tab-text card border-1 mt-3">
+										<div class="alert">
+											<h6>Courgette</h6>
+											<p class="brand-typo">
+												This is Courgette. Our brand
+												typeface.
+											</p>
+											<p>
+												Courgette typography is a
+												specific font or typeface
+												characterized by its elegant and
+												slightly whimsical appearance.
+												It often features fluid,
+												cursive-like letterforms with a
+												unique personality, making it
+												well-suited for decorative or
+												creative design projects
+											</p>
+											<p class="brand-support-typo">
+												Roboto is our supporting font.
+											</p>
+											<p>
+												Roboto typography is a modern
+												and versatile typeface designed
+												for digital interfaces and
+												printed materials. It is known
+												for its clean, neutral, and
+												easily readable characters.
+											</p>
+										</div>
+									</div>
+								</div>
 
-                </div>
-            </div>
-        </div>
-    </main>
+								<div class="tab-text row p-3">
+									<h1>Font Scale</h1>
+									<p>
+										A font scale, in design and typography,
+										refers to a consistent system of sizing
+										fonts or typefaces relative to one
+										another.
+									</p>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p>Copyright 2023, Internet & Web Applications. INFO-3171-(01)-2023 Fall</p>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">
+														Typhography
+													</th>
+													<th scope="col">
+														Font Size
+													</th>
+													<th scope="col">
+														Font Weight
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<h1>Heading One</h1>
+													</td>
+													<td>3rem</td>
+													<td>Courgette - Regular</td>
+												</tr>
+												<tr>
+													<td>
+														<h2>Heading Two</h2>
+													</td>
+													<td>2.5rem</td>
+													<td>Courgette - Regular</td>
+												</tr>
+												<tr>
+													<td>
+														<h3>Heading Three</h3>
+													</td>
+													<td>2rem</td>
+													<td>Courgette - Regular</td>
+												</tr>
+												<tr>
+													<td>
+														<h6>Heading Six</h6>
+													</td>
+													<td>1.6rem</td>
+													<td>Courgette - Regular</td>
+												</tr>
+												<tr>
+													<td>
+														<p>Paragraph</p>
+													</td>
+													<td>1rem</td>
+													<td>Roboto - Regular</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!--TYPO END-->
 
-    <a href="#" id="totop"><i class="bi bi-arrow-up-short"></i></a>
-    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
-    <script type="text/javascript" src="./assets/js/slider.js"></script>
-    <script type="text/javascript" src="./assets/js/toTop.js"></script>
+							<!--COLORS START-->
+							<div class="entry-content" id="colors">
+								<h1>Colors</h1>
+								<p>
+									Color is a visual perception and attribute
+									of objects and light that our eyes detect
+									through different wavelengths. It is an
+									essential element in design, art, and
+									everyday life.
+								</p>
+								<div class="row">
+									<div class="col-sm-12 col-md-6 mb-3">
+										<h3 class="mt-0">
+											Primary Brand Color
+										</h3>
+										<p>
+											These are Cloud Vid's corporate
+											colors, designed to convey
+											INTENSITY, SWIFTNESS, and VITALITY
+											across a wide range of applications
+											and media. Ideally, these colors
+											should be paired with a crisp white
+											base for maximum impact.
+											Additionally, there are secondary
+											colors, functional colors, and
+											feedback colors.
+										</p>
+									</div>
+									<div
+										class="col-sm-12 col-md-6 mb-3 this-pastel"
+									>
+										<h6 class="mt-0 text-center">
+											Acapulo
+										</h6>
+										<div>
+											<div>
+												<p>Hex: #7cb695</p>
+												<p>R: 126 G: 217 B: 87</p>
+												<p>H: 102 S: 60 B: 85</p>
+											</div>
+										</div>
+									</div>
 
+									<div class="col-sm-12">
+										<h3 class="underline">
+											Functional Colors
+										</h3>
+										<p>
+											Functional color, in the context of
+											design, refers to the strategic and
+											purposeful use of color to serve
+											specific functions or objectives.
+										</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color1">
+											<div class="text-color1">
+												<p>Hex: #241c15</p>
+												<p>R: 59 G: 141 B: 79</p>
+												<p>H: 135 S: 58 B: 55</p>
+											</div>
+										</div>
+										<p>Peppercorn</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color2">
+											<div>
+												<p>Hex: #edf1d6</p>
+												<p>R: 224 G: 160 B: 85</p>
+												<p>H: 32 S: 62 B: 88</p>
+											</div>
+										</div>
+										<p>Chrome White</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color3">
+											<div>
+												<p>Hex: #b6d6c4</p>
+												<p>R: 178 G: 83 B: 62</p>
+												<p>H: 11 S: 65 B: 70</p>
+											</div>
+										</div>
+										<p>Gum Leaf</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color4">
+											<div>
+												<p>Hex: #96c5aa</p>
+												<p>R: 58 G: 212 B: 158</p>
+												<p>H: 159 S: 73 B: 83</p>
+											</div>
+										</div>
+										<p>Shadow Green</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color5">
+											<div class="text-color5">
+												<p>Hex: #42614f</p>
+												<p>R: 38 G: 244 B: 225</p>
+												<p>H: 174 S: 84 B: 96</p>
+											</div>
+										</div>
+										<p>Mineral Green</p>
+									</div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var entryContents = document.querySelectorAll(".entry-content");
-            var preloader = document.getElementById("preloader");
-            var miniTabItems = document.querySelectorAll("#mini-tab .mt-el");
-            var contentHolder = document.getElementById("content-holder");
+									<div class="col-sm-12">
+										<h3 class="underline">
+											Feedback Colors
+										</h3>
+										<p>
+											Feedback color, in design and user
+											interface contexts, refers to the
+											use of color as a means of providing
+											information or indicating the status
+											of a user action or system response.
+										</p>
+									</div>
 
-            // Function to add the "disable-this" class to all .mt-el elements
-            function addDisableClass() {
-                miniTabItems.forEach(function (mtEl) {
-                    mtEl.classList.add("disable-this");
-                });
-            }
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color6">
+											<div>
+												<p>Hex: #d8eacc</p>
+												<p>R: 0 G: 45 B: 140</p>
+												<p>H: 221 S: 100 B: 55</p>
+											</div>
+										</div>
+										<p>Zanah</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color7">
+											<div>
+												<p>Hex: #efb495</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Tacao</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color8">
+											<div>
+												<p>Hex: #ef9595</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Sea Pink</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color9">
+											<div>
+												<p>Hex: #c5dbf2</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Link Water</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color10">
+											<div>
+												<p>Hex: #cccc</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Silver</p>
+									</div>
 
-            // Function to remove the "disable-this" class from all .mt-el elements
-            function removeDisableClass() {
-                miniTabItems.forEach(function (mtEl) {
-                    mtEl.classList.remove("disable-this");
-                });
-            }
+									<div class="col-sm-12">
+										<h3 class="underline">Accent Colors</h3>
+										<p>
+											An accent color, in the context of
+											design, is a specific color used to
+											draw attention to or highlight
+											certain elements within a design or
+											composition.
+										</p>
+									</div>
 
-            // Handle clicking on .mt-el elements
-            miniTabItems.forEach(function (item) {
-                item.addEventListener("click", function () {
-                    // Add the "disable-this" class to all .mt-el elements
-                    addDisableClass();
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color11">
+											<div>
+												<p>Hex: #7ed957</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Pastel Green</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color12">
+											<div>
+												<p>Hex: #3b8d4f</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Goblin</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color13">
+											<div>
+												<p>Hex: #e0a055</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Di Serria</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color14">
+											<div class="text-color14">
+												<p>Hex: #b2533e</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Brown Rust</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color15">
+											<div>
+												<p>Hex: #3ad49e</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Shamrock</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color16">
+											<div>
+												<p>Hex: #26f4e1</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Bright Turquoise</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color17">
+											<div class="text-color17">
+												<p>Hex: #022d8c</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Resolution Blue</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color18">
+											<div>
+												<p>Hex: #edd246</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Ronchi</p>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-12">
+										<div class="box-colors color19">
+											<div class="text-color19">
+												<p>Hex: #6c3428</p>
+												<p>R: 237 G: 210 B: 70</p>
+												<p>H: 50 S: 70 B: 93</p>
+											</div>
+										</div>
+										<p>Irish Coffee</p>
+									</div>
+								</div>
+							</div>
+							<!--COLORS END-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 
-                    // Hide all entry-content elements
-                    entryContents.forEach(function (entryContent) {
-                        entryContent.style.display = "none";
-                    });
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p>
+							Copyright 2023, Internet & Web Applications.
+							INFO-3171-(01)-2023 Fall
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-                    // Remove the .active class from all .mt-el elements
-                    miniTabItems.forEach(function (mtEl) {
-                        mtEl.classList.remove("active");
-                    });
+		<a href="#" id="totop"><i class="bi bi-arrow-up-short"></i></a>
+		<script type="text/javascript" src="./assets/js/slick.min.js"></script>
+		<script type="text/javascript" src="./assets/js/slider.js"></script>
+		<script type="text/javascript" src="./assets/js/toTop.js"></script>
 
-                    // Add the .active class to the clicked .mt-el
-                    item.classList.add("active");
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var entryContents = document.querySelectorAll(".entry-content");
+				var preloader = document.getElementById("preloader");
+				var miniTabItems =
+					document.querySelectorAll("#mini-tab .mt-el");
+				var contentHolder = document.getElementById("content-holder");
 
-                    // Get the value of the data-tab attribute
-                    var tabValue = item.getAttribute("data-tab");
+				// Function to add the "disable-this" class to all .mt-el elements
+				function addDisableClass() {
+					miniTabItems.forEach(function (mtEl) {
+						mtEl.classList.add("disable-this");
+					});
+				}
 
-                    // Show the preloader
-                    preloader.style.display = "block";
+				// Function to remove the "disable-this" class from all .mt-el elements
+				function removeDisableClass() {
+					miniTabItems.forEach(function (mtEl) {
+						mtEl.classList.remove("disable-this");
+					});
+				}
 
-                    // After 2 seconds, show the target content
-                    setTimeout(function () {
-                        preloader.style.display = "none";
+				// Handle clicking on .mt-el elements
+				miniTabItems.forEach(function (item) {
+					item.addEventListener("click", function () {
+						// Add the "disable-this" class to all .mt-el elements
+						addDisableClass();
 
-                        // Remove the "disable-this" class from all .mt-el elements
-                        removeDisableClass();
+						// Hide all entry-content elements
+						entryContents.forEach(function (entryContent) {
+							entryContent.style.display = "none";
+						});
 
-                        // Display the content with the matching ID
-                        var showContent = document.getElementById(tabValue);
-                        if (showContent) {
-                            showContent.style.display = "block";
-                        }
-                    }, 2000);
-                });
-            });
+						// Remove the .active class from all .mt-el elements
+						miniTabItems.forEach(function (mtEl) {
+							mtEl.classList.remove("active");
+						});
 
-            // Initially, select the first .mt-el and trigger a click event
-            if (miniTabItems.length > 0) {
-                miniTabItems[0].click();
-            }
-        });
-    </script>
-    <style>
-        a.disabled-link {
-            pointer-events: none;
-            text-decoration: none;
-            color: gray;
-            cursor: not-allowed;
-        }
-    </style>
-</body>
+						// Add the .active class to the clicked .mt-el
+						item.classList.add("active");
 
+						// Get the value of the data-tab attribute
+						var tabValue = item.getAttribute("data-tab");
+
+						// Show the preloader
+						preloader.style.display = "block";
+
+						// After 2 seconds, show the target content
+						setTimeout(function () {
+							preloader.style.display = "none";
+
+							// Remove the "disable-this" class from all .mt-el elements
+							removeDisableClass();
+
+							// Display the content with the matching ID
+							var showContent = document.getElementById(tabValue);
+							if (showContent) {
+								showContent.style.display = "block";
+							}
+						}, 2000);
+					});
+				});
+
+				// Initially, select the first .mt-el and trigger a click event
+				if (miniTabItems.length > 0) {
+					miniTabItems[0].click();
+				}
+			});
+		</script>
+		<style>
+			a.disabled-link {
+				pointer-events: none;
+				text-decoration: none;
+				color: gray;
+				cursor: not-allowed;
+			}
+		</style>
+	</body>
 </html>
